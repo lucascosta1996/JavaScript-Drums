@@ -1,0 +1,59 @@
+body {
+  background: rgb(73,144,159);
+  background: linear-gradient(90deg, rgba(73,144,159,1) 0%, rgba(0,184,222,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.buttons {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: max-content;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 80%;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 3px #0A3463;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 140px;
+  margin: 0 20px;
+  text-align: center;
+  transition: all .6s ease;
+  width: 140px;
+}
+
+.button kbd {
+  color: #FFF;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.button span {
+  color: #FFEF96;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pulse {
+  animation: border-pulsate .6s;
+}
+
+@keyframes border-pulsate {
+  0%   { border-color: rgba(0, 255, 255, 1); box-shadow: 0 0 5em rgba(0, 255, 255, 1); }
+  50%  { border-color: rgba(0, 255, 255, 0); box-shadow: 0 0 5em rgba(0, 255, 255, 0);}
+  100% { border-color: rgba(0, 255, 255, 1); box-shadow: 0 0 5em rgba(0, 255, 255, 1);}
+}
